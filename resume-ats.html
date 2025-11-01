@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Krupa Pawardesai — Resume (ATS friendly)</title>
+  <meta name="description" content="Krupa Pawardesai — BCA student. Full-stack development, Data Visualization, Data Analysis.">
+  <style>
+    /* Minimal styling for readability in browser; does not affect ATS parsing */
+    body{font-family:Arial,Helvetica,sans-serif;line-height:1.4;color:#111;padding:20px;max-width:800px;margin:auto}
+    h1{font-size:1.6rem;margin-bottom:6px}
+    h2{font-size:1.1rem;margin-top:18px;margin-bottom:6px}
+    p, li{font-size:0.98rem}
+    .meta{margin-bottom:8px}
+    .actions{margin-top:14px}
+    button{padding:8px 12px;border-radius:4px;border:1px solid #111;background:#fff;cursor:pointer}
+  </style>
+</head>
+<body>
+  <h1>Krupa Pawardesai</h1>
+  <div class="meta">
+    Athani, Karnataka, India
+    | Email: <a href="mailto:kpawardesai@gmail.com?subject=Regarding%20Your%20Resume" onclick="window.location.href='mailto:kpawardesai@gmail.com'">kpawardesai@gmail.com</a>
+    | Phone: <a href="tel:+917019917041">+91-7019917041</a>
+    | LinkedIn: <a href="https://www.linkedin.com/in/krupa-pawardesai-19a3b32a4" target="_blank" rel="noopener noreferrer">linkedin.com/in/krupa-pawardesai-19a3b32a4</a>
+    | GitHub: <a href="https://github.com/krupa7019" target="_blank" rel="noopener noreferrer">github.com/krupa7019</a>
+  </div>
+
+  <h2>Summary</h2>
+  <p>Motivated BCA student with hands-on experience in full-stack development, data visualization, and data analysis. Skilled in React.js, REST APIs, MySQL, Tableau, and Power BI. Strong problem-solving and teamwork abilities.</p>
+
+  <h2>Technical Skills</h2>
+  <ul>
+    <li>Programming: C, Java (OOPs), Python</li>
+    <li>Web: HTML, CSS, React.js, REST APIs</li>
+    <li>Databases: MySQL, PostgreSQL</li>
+    <li>Visualization: Tableau, Power BI</li>
+    <li>Tools: MS Office, Postman</li>
+  </ul>
+
+  <h2>Work Experience</h2>
+  <h3>Full Stack Development Intern — Nigaan2</h3>
+  <div>Jul 2025 — Jan 2026</div>
+  <ul>
+    <li>Front-end, back-end, and database development using React.js and MySQL.</li>
+    <li>Designed, tested, and optimized applications; collaborated in team projects.</li>
+    <li>Improved API response handling and UI performance.</li>
+  </ul>
+
+  <h3>Data Visualization Intern — Tata Company</h3>
+  <div>Feb 2025 — Apr 2025</div>
+  <ul>
+    <li>Created interactive dashboards using Power BI and Tableau.</li>
+    <li>Generated reports to support business decision-making.</li>
+  </ul>
+
+  <h3>Data Analyst Intern (Virtual) — Deloitte</h3>
+  <div>Sep 2025</div>
+  <ul>
+    <li>Data cleaning, validation, and visualization using Excel and Tableau.</li>
+    <li>Assisted in generating business insights and automating reporting processes.</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <h3>Cart Management Web App</h3>
+  <p>CRUD web app with user authentication, session management, and optimized API calls. Tools: React.js, Node.js, MySQL/PostgreSQL.</p>
+
+  <h3>Image Steganography</h3>
+  <p>Secure data hiding in images/text using cryptographic techniques. Tools: C, Ubuntu.</p>
+
+  <h2>Education</h2>
+  <ul>
+    <li>BCA (Pursuing), KLE’s SSMS BCA College, Athani — 2023–2026; CGPA: 9.0/10</li>
+    <li>PUC (Science), J.A. Comp. PU College, Athani — 2020–2022; 72%</li>
+    <li>SSLC, Vidya Vardhak English Medium School, Athani — 2019–2020; 82.08%</li>
+  </ul>
+
+  <h2>Certificates</h2>
+  <ul>
+    <li>Full Stack Web Development in MERN Stack — Nigaan2</li>
+    <li>Data Visualization — Tata Company</li>
+    <li>Data Analyst Internship — Deloitte</li>
+    <li>Gen AI — CLOUD ENABLED PTE LTD</li>
+    <li>Github Copilot — SEMINAR ROOM</li>
+  </ul>
+
+  <h2>Declaration</h2>
+  <p>I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
+
+  <div class="actions">
+    <button id="downloadTxt">Download plain text</button>
+  </div>
+
+  <script>
+    // Build a plain-text version and trigger download (ATS-friendly)
+    document.getElementById('downloadTxt').addEventListener('click', function(){
+      // Use visible text content to create a simple, parseable plain-text file
+      var header = 'Krupa Pawardesai\nAthani, Karnataka, India\nEmail: kpawardesai@gmail.com | Phone: +91-7019917041 | LinkedIn: https://www.linkedin.com/in/krupa-pawardesai-19a3b32a4\n\n';
+      var text = header + document.body.innerText.replace(/\u00A0/g,' ').replace(/\n{2,}/g,'\n\n');
+      var blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'Krupa_Pawardesai_Resume.txt';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>

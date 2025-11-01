@@ -1,0 +1,51 @@
+/* Basic reset */
+:root{
+  --accent:#0b6df6;
+  --muted:#666;
+  --bg:#ffffff;
+  --text:#111;
+  --max-width:900px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:Inter, Roboto, 'Segoe UI', Arial, sans-serif;
+  color:var(--text);
+  background: #f5f7fb;
+  margin:0; padding:24px; -webkit-font-smoothing:antialiased;
+}
+.container{max-width:var(--max-width);margin:0 auto;background:var(--bg);padding:28px;border-radius:8px;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+.header{display:flex;justify-content:space-between;align-items:start;gap:12px;border-bottom:1px solid #e6ecff;padding-bottom:14px}
+.name{margin:0;font-size:1.9rem;letter-spacing:0.3px}
+.location{margin:4px 0 0;color:var(--muted)}
+.contacts{font-size:0.95rem;color:var(--muted);display:flex;gap:8px;align-items:center}
+.contacts a{color:var(--accent);text-decoration:none}
+
+section{margin-top:18px}
+section h2, section h3{margin:0 0 8px}
+.skills .skill-columns{display:flex;gap:24px}
+.skills ul, .education ul, .certificates ul{margin:0;padding-left:18px}
+article{margin-bottom:12px}
+time{font-size:0.9rem;color:var(--muted)}
+
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:20px;border-top:1px solid #eef2ff;padding-top:12px}
+.btn{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+.small{font-size:0.9rem;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:720px){
+  .header{flex-direction:column;align-items:flex-start}
+  .skills .skill-columns{flex-direction:column}
+}
+
+/* Print-friendly */
+@media print{
+  body{background:white;padding:0}
+  .container{box-shadow:none;border-radius:0;padding:0;margin:0}
+  .btn{display:none}
+  a::after{content:""}
+}
+
+/* Accessibility small tweaks */
+a:focus, button:focus{outline:3px solid rgba(11,109,246,0.18);outline-offset:2px}

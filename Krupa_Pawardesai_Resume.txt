@@ -1,0 +1,46 @@
+Krupa Pawardesai
+Athani, Karnataka, India
+Email: kpawardesai@gmail.com
+Phone: +91-7019917041
+LinkedIn: https://www.linkedin.com/in/krupa-pawardesai-19a3b32a4
+GitHub: https://github.com/krupa7019
+
+Summary:
+Motivated BCA student with hands-on experience in full-stack development, data visualization, and data analysis. Skilled in React.js, REST APIs, MySQL, Tableau, and Power BI.
+
+Technical Skills:
+- Programming: C, Java (OOPs), Python
+- Web: HTML, CSS, React.js, REST APIs
+- Databases: MySQL, PostgreSQL
+- Visualization: Tableau, Power BI
+- Tools: MS Office, Postman
+
+Work Experience:
+Full Stack Development Intern — Nigaan2 (Jul 2025 — Jan 2026)
+- Front-end, back-end, and database development using React.js and MySQL.
+- Designed, tested, and optimized applications; collaborated in team projects.
+
+Data Visualization Intern — Tata Company (Feb 2025 — Apr 2025)
+- Created interactive dashboards using Power BI and Tableau.
+
+Data Analyst Intern (Virtual) — Deloitte (Sep 2025)
+- Data cleaning, validation, and visualization using Excel and Tableau.
+
+Projects:
+- Cart Management Web App: CRUD app with authentication, session management, React.js, Node.js, MySQL/PostgreSQL.
+- Image Steganography: Secure data hiding using C on Ubuntu.
+
+Education:
+- BCA (Pursuing), KLE’s SSMS BCA College, Athani — 2023–2026; CGPA: 9.0/10
+- PUC (Science), J.A. Comp. PU College, Athani — 2020–2022; 72%
+- SSLC, Vidya Vardhak English Medium School, Athani — 2019–2020; 82.08%
+
+Certificates:
+- Full Stack Web Development in MERN Stack — Nigaan2
+- Data Visualization — Tata Company
+- Data Analyst Internship — Deloitte
+- Gen AI — CLOUD ENABLED PTE LTD
+- Github Copilot — SEMINAR ROOM
+
+Declaration:
+I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.
